@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f023ba-3e5c-4b67-952a-384fac4da9dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
