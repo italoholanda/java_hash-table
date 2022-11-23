@@ -11,6 +11,7 @@ public class Main {
         try {
             System.out.println(hashTable.getValue("Macacos"));
             System.out.println(hashTable.deleteValue("Macacos"));
+            System.out.println(hashTable.getValue("Macacos"));
         } catch (NullPointerException nee) {
             System.out.println("Warning: Tried to access a null value on HashTable");
         } catch (IndexOutOfBoundsException ior) {

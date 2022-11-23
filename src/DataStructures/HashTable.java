@@ -63,11 +63,16 @@ public class HashTable<V> {
 
     public V deleteValue(String valueKey) throws NullPointerException, IndexOutOfBoundsException  {
         int tableIndex = calcIndex(valueKey);
+        int nodeIndex = 0;
+
+        LinkedList<HashValue<V>> linkedList = TABLE.get(tableIndex);
         V value = this.getValue(valueKey);
 
-        int linkedListIndex = TABLE.get(tableIndex).indexOf(value);
-        TABLE.get(tableIndex).remove(linkedListIndex);
+        for (int i = 0; i < TABLE.get(tableIndex).size(); i++)
+            if (linkedList.get(i).getKey().equals(valueKey))
+                nodeIndex = i;
 
+        linkedList.remove(nodeIndex);
         return value;
     }
 
